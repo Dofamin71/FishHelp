@@ -29,17 +29,16 @@ public class Carousel extends AppCompatActivity {
         pager.setAdapter(pagerAdapter);
 
         pager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-
             @Override
             public void onPageSelected(int position) {
-                Log.d(TAG, "onPageSelected, position = " + position);}
+                Log.d(TAG, "onPageSelected, position = " + position);
+            }
 
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
 
             @Override
             public void onPageScrollStateChanged(int state) {}
-
         });
     }
 }
@@ -68,15 +67,19 @@ class MyFragmentPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 title = "ВОБЛЕРЫ";
                 break;
+
             case 1:
                 title = "БЛЕСНЫ";
                 break;
+
             case 2:
                 title = "КОЛЕБАЛКИ";
                 break;
+
             case 3:
                 title = "РЕЗИНА";
                 break;
+
             default:
                 title = "DEFAULT";
                 break;
