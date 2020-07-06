@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/action_main">
+
+    <fragment
+        android:id="@+id/action_main"
+        android:name="com.example.fishhelp.ui.main.FragmentMain"
+        android:label="@string/action_main"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/action_add"
+        android:name="com.example.fishhelp.ui.add.FragmentAdd"
+        android:label="@string/action_add"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/action_search"
+        android:name="com.example.fishhelp.ui.search.FragmentSearch"
+        android:label="@string/action_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>
