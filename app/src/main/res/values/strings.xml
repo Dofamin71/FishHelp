@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">FishHelp</string>
     <string name="tab_text_1">Воблеры</string>
-    <string name="tab_text_2">Блесны</string>
+    <string name="tab_text_2">Вращалки</string>
     <string name="tab_text_3">Колебалки</string>
     <string name="tab_text_4">Резина</string>
 
     <string name="action_search">Поиск</string>
     <string name="action_main">Главная</string>
     <string name="action_add">Добавить</string>
+    <string name="text_card_view1">Моя коллекция</string>
+    <string name="text_card_view2">Количество приманок</string>
+    <string name="amount_null">264</string>
 </resources>
