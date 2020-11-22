@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "952386422740",
+    "firebase_url": "https://fishhelp-87654.firebaseio.com",
+    "project_id": "fishhelp-87654",
+    "storage_bucket": "fishhelp-87654.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952386422740:android:4b7013f8f064dff399f841",
+        "android_client_info": {
+          "package_name": "com.example.buttonnavigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952386422740-k02cqjqb4elkmv602loh31o13tnrln7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPpRUS0QyDkGWsQDB9rboX1i7PbPw0CMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952386422740-k02cqjqb4elkmv602loh31o13tnrln7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952386422740:android:86855d543363835f99f841",
+        "android_client_info": {
+          "package_name": "com.example.fishhelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952386422740-k02cqjqb4elkmv602loh31o13tnrln7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPpRUS0QyDkGWsQDB9rboX1i7PbPw0CMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952386422740-k02cqjqb4elkmv602loh31o13tnrln7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

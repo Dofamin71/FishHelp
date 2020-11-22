@@ -10,25 +10,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name="com.example.fishhelp.MainActivity"
             android:label="@string/app_name">
+
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
+
         </activity>
 
         <activity
             android:name="com.example.fishhelp.Carousel"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/app_name">
+
             <intent-filter>
+
                 <action android:name="android.intent.action.DEFINE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name="com.example.fishhelp.UserActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/app_name">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.DEFINE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+        </activity>
+
     </application>
+
 </manifest>
