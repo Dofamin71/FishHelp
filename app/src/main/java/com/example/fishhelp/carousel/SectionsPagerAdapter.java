@@ -1,4 +1,4 @@
-package com.example.fishhelp;
+package com.example.fishhelp.carousel;
 
 import android.content.Context;
 
@@ -9,10 +9,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.fishhelp.fragments.FirstFragment;
-import com.example.fishhelp.fragments.FourthFragment;
-import com.example.fishhelp.fragments.SecondFragment;
-import com.example.fishhelp.fragments.ThirdFragment;
+import com.example.fishhelp.R;
+import com.example.fishhelp.carousel.fragments.FirstFragment;
+import com.example.fishhelp.carousel.fragments.FourthFragment;
+import com.example.fishhelp.carousel.fragments.SecondFragment;
+import com.example.fishhelp.carousel.fragments.ThirdFragment;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 

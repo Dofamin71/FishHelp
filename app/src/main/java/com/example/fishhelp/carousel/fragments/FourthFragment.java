@@ -1,4 +1,4 @@
-package com.example.fishhelp.fragments;
+package com.example.fishhelp.carousel.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import com.example.fishhelp.R;
 public class FourthFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment4, container, false);
+        View root = inflater.inflate(R.layout.fragment_4, container, false);
         return root;
     }
 }

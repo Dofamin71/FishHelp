@@ -1,4 +1,4 @@
-package com.example.fishhelp;
+package com.example.fishhelp.user;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fishhelp.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -20,13 +21,13 @@ public class UserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_in_user);
+        setContentView(R.layout.fragment_sign_in);
 
         signName = findViewById(R.id.nameTextInputEditText);
         signEmail = findViewById(R.id.emailTextInputEditText);
         signLogin = findViewById(R.id.loginTextInputEditText);
         signPassword = findViewById(R.id.passwordTextInputEditText);
-        signUp = findViewById(R.id.sign_up);
+        signUp = findViewById(R.id.signInButton);
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,10 +40,9 @@ public class UserActivity extends AppCompatActivity {
                 String login = signLogin.getText().toString();
                 String password = signPassword.getText().toString();
 
-                UserHelper userHelper = new UserHelper(name, email, login, password);
+                UserClass user = new UserClass(name, email, login, password);
 
-                reference.child(name).setValue(userHelper);
-                //reference.setValue("Fuck you!");
+                reference.child(name).setValue(user);
             }
         });
     }

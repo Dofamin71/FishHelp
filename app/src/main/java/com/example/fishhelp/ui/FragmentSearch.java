@@ -1,4 +1,4 @@
-package com.example.fishhelp.fragments;
+package com.example.fishhelp.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,10 +10,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.fishhelp.R;
 
-public class SecondFragment extends Fragment {
-    @Override
+public class FragmentSearch extends Fragment {
+
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment2, container, false);
+        View root = inflater.inflate(R.layout.fragment_search, container, false);
         return root;
     }
 }

@@ -1,11 +1,11 @@
-package com.example.fishhelp;
+package com.example.fishhelp.user;
 
-public class UserHelper {
+public class UserClass {
     String name, email, login, password;
 
-    public UserHelper() {}
+    public UserClass() {}
 
-    public UserHelper(String name, String email, String login, String password) {
+    public UserClass(String name, String email, String login, String password) {
         this.name = name;
         this.email = email;
         this.login = login;

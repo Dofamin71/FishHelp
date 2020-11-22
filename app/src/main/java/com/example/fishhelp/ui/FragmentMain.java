@@ -1,4 +1,4 @@
-package com.example.fishhelp.ui.main;
+package com.example.fishhelp.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
-import com.example.fishhelp.Carousel;
+import com.example.fishhelp.carousel.Carousel;
 import com.example.fishhelp.R;
-import com.example.fishhelp.UserActivity;
+import com.example.fishhelp.user.UserActivity;
 
 public class FragmentMain extends Fragment {
 

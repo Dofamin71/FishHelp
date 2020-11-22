@@ -1,4 +1,4 @@
-package com.example.fishhelp;
+package com.example.fishhelp.carousel;
 
 import android.os.Bundle;
 
@@ -6,6 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.fishhelp.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class Carousel extends AppCompatActivity {
