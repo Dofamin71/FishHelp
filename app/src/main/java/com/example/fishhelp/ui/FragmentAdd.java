@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.fishhelp.LureClass;
 import com.example.fishhelp.R;
-import com.example.fishhelp.user.UserClass;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -37,15 +36,12 @@ public class FragmentAdd extends Fragment {
             public void onClick(View v) {
                 rootNode = FirebaseDatabase.getInstance();
                 reference = rootNode.getReference("lures");
-
                 String brand = signBrand.getText().toString();
                 String model = signModel.getText().toString();
                 String color = signColor.getText().toString();
                 String price = signPrice.getText().toString();
-
                 LureClass lure = new LureClass(brand, model, color, price);
-
-                reference.child(brand).child(model).setValue(lure);
+                if (!brand.equals("")&&!model.equals("")) reference.child(brand).child(model).setValue(lure);
             }
         });
         return root;

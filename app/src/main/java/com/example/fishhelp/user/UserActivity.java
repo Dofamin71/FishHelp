@@ -21,28 +21,25 @@ public class UserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_sign_in);
+        setContentView(R.layout.fragment_sign_up);
 
         signName = findViewById(R.id.nameTextInputEditText);
         signEmail = findViewById(R.id.emailTextInputEditText);
         signLogin = findViewById(R.id.loginTextInputEditText);
         signPassword = findViewById(R.id.passwordTextInputEditText);
-        signUp = findViewById(R.id.signInButton);
+        signUp = findViewById(R.id.signUpButton);
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rootNode = FirebaseDatabase.getInstance();
                 reference = rootNode.getReference("users");
-
                 String name = signName.getText().toString();
                 String email = signEmail.getText().toString();
                 String login = signLogin.getText().toString();
                 String password = signPassword.getText().toString();
-
                 UserClass user = new UserClass(name, email, login, password);
-
-                reference.child(name).setValue(user);
+                if (!name.equals("")) reference.child(name).setValue(user);
             }
         });
     }
