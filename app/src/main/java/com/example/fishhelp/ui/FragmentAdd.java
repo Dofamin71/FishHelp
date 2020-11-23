@@ -40,8 +40,8 @@ public class FragmentAdd extends Fragment {
                 String model = signModel.getText().toString();
                 String color = signColor.getText().toString();
                 String price = signPrice.getText().toString();
-                LureClass lure = new LureClass(brand, model, color, price);
-                if (!brand.equals("")&&!model.equals("")) reference.child(brand).child(model).setValue(lure);
+                LureClass lure = new LureClass(color, price);
+                if (!brand.equals("")&&!model.equals("")) reference.child(brand).child(model).child(color).setValue(lure);
             }
         });
         return root;

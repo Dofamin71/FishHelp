@@ -5,6 +5,11 @@ public class LureClass {
 
     public LureClass() {}
 
+    public LureClass(String color, String price) {
+        this.color = color;
+        this.price = price;
+    }
+
     public LureClass(String brand, String model, String color, String price) {
         this.brand = brand;
         this.model = model;

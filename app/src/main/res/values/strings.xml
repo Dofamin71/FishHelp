@@ -8,7 +8,7 @@
     <string name="action_search">Поиск</string>
     <string name="action_main">Главная</string>
     <string name="action_add">Добавить</string>
-    <string name="text_card_view1">Моя коллекция</string>
+    <string name="text_card_view1">Мои приманки</string>
     <string name="text_card_view2">Количество приманок</string>
     <string name="amount_null">264</string>
 </resources>
